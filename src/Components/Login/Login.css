@@ -1,0 +1,115 @@
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+  z-index: 500;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  z-index: 600;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #81e7da;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #b9c207;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+.backdrop{
+  background-color: rgba(36, 34, 34, 0.534);
+  position: fixed;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.modalbox{
+  /* border: 1px solid black; */
+  width: 450px;
+  height: 400px;
+  margin-left: 500px;
+  margin-top: 200px;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, .5);
+  border-radius: 5px;
+}
+#modalexc{
+  height: 450px;
+}
+#changebtn{
+  width: 200px;
+  background-color: transparent;
+  color: #4CAF50;
+  margin-left: 33px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#changebtn::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0074D9;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #changebtn:hover::before{
+    /* left: 0; */
+    right: auto;
+    width: 150px;
+  }
+}
+
+
+
+

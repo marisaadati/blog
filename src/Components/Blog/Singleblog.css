@@ -1,0 +1,172 @@
+
+.page-content{
+  margin: 0 auto;
+  max-width: 840px;
+  padding: 3rem 0;
+}
+.singlebloginfo{
+  display: table;
+  margin-bottom: 10px;
+}
+.authoravatar{
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+.module-info{
+  text-rendering: auto;
+  color: var(--color-gray-800);
+  display: table-cell;
+  font-size: .8rem;
+  padding-right: 15px;
+  vertical-align: middle;
+  width: 100%;
+}
+.title{
+  font-size: 55px;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.blogcontent{
+  font-size: 30px;
+  text-align: center;
+}
+.authorname{
+  color: var(--color-gray-900);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-left: 0.6rem;
+}
+.authorspan{
+  font-size: 17px;
+  font-weight: 400;
+}
+.singleblogimg{
+ border-radius: 50%;
+ margin: 25px;
+ width: 70px;
+}
+.singleblogphoto{
+  width: 100%;
+  position: sticky;
+ 
+}
+.photobox{
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+  background-color: blue;
+}
+.boxcontent{
+  padding:20px ;
+  text-align: justify
+}
+.contentbody{
+  padding-top: 60px;
+  
+}
+.textborder{
+  border: 1px solid #eee;
+  padding: 50px;
+}
+.post-actions{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn-action{
+  align-items: center;
+  display: flex;
+  margin-left: 1rem;
+}
+
+.commentbox{
+  margin-left:20px;
+  margin-top: 100px;
+  color: #39134e;
+}
+.ratingclass{
+  margin-left: 300px;
+  margin-bottom: 5px;
+}
+.comment{
+  padding: 10px;
+  border-radius: 10px;
+  width: 500px;
+  height: 100px;
+}
+/* ------------------------------------------------- */
+.sendbtn{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  width: 100px;
+  height: 35px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+.sendbtn span{
+  font-size: 16px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.sendbtn span:before,
+.sendbtn span:after{
+  position: absolute;
+  content: "Send";
+  height: 35px;
+  width:100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #39134e;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.sendbtn span:before{
+  color: #fff;
+  background: #39134e;
+  transform: rotateY(0deg) translateZ(25px);
+}
+.sendbtn span:after{
+  color: #39134e;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.sendbtn span:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+.contentbox{
+  background-color: #39134e;
+  border: 1px solid #eee;
+  height: auto;
+  width: auto;
+  box-sizing: content-box;
+  flex-direction: column;
+}
+.commentdiv{
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 16px;
+  cursor: text;
+  margin: 20px;
+  width: 50%;
+  height: auto;
+  background-color:#eee;
+  border-radius: 5px;
+}
+.usercomment{
+  font-size: 15px;
+  font-weight: 300;
+  color: #b9c207;
+}
